@@ -1,10 +1,11 @@
 from flask import app, Flask, request, jsonify
+from flask_cors import CORS
 from werkzeug.exceptions import HTTPException
 from model_handler import get_predictions
 from utils import get_preprocessed_images, images_to_tensors
 
 app = Flask(__name__)
-
+CORS(app)
 @app.errorhandler(Exception)
 def handle_exception(e):
     code = 500
