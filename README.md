@@ -10,7 +10,7 @@ Before running the server, please make sure you have set up a virtual environmen
 1. Activate the virtual environment:
     ```bash
     source <venv_name>/bin/activate  # for Linux/Mac
-    . <venv_name>/Scripts/activate  # for Windows
+    <venv_name>/Scripts/activate  # for Windows
     ```
 
 2. Install PyTorch and torchvision:
@@ -22,11 +22,7 @@ Before running the server, please make sure you have set up a virtual environmen
 
 3. Install Server dependencies:
     ```bash
-    pip install flask
-    pip install torch
-    pip install numpy
-    pip insatll pillow
-    pip install pillow-heif
+    pip install flask flask-cors numpy pillow pillow-heif
     ```
 
 Once you have completed these steps, you are ready to run the server using the following command:
